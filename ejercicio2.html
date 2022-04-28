@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S2 - Ejercicio 2</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="logo" />
+      <h1>Welcome to Mailchimp</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+        veritatis, animi ipsa quisquam, ad rem numquam consequuntur ipsam
+        laudantium nam, doloremque aliquid non expedita aspernatur repellendus
+        minima esse! Quidem, quam!
+      </p>
+    </header>
+
+    <main>
+      <form action="new-user">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="user-email"
+          id="email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+        />
+        <br />
+        <br />
+        <label for="username">Username</label>
+        <input type="text" name="user-name" id="name" required />
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="user-password"
+          id="password"
+          required
+          minlength="6"
+          placeholder="Mínimo 6 caractéres"
+          pattern="[A-Za-z0-9]+"
+        />
+        <br />
+        <br />
+        <img src="img/requisitos.png" alt="requisitos" />
+        <br />
+        <br />
+        <input type="submit" value="Sign Up" />
+        <br />
+        <br />
+        <input type="checkbox" name="newsletter" id="newsletter" required/>
+        <label for="newsletter">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque
+          exercitationem cum voluptates officiis cupiditate, sit aliquam minima
+          repellat, nulla perspiciatis, expedita eligendi nihil quo labore
+          adipisci dolores harum aut!
+        </label>
+        <br />
+        <br />
+        <label for="terms">
+          Al hacer click en "Sign Up", aceptas los
+          <a href="http://">Términos de uso</a>
+          y la
+          <a href="http://">Política de privacidad</a>
+        </label>
+      </form>
+    </main>
+  </body>
+</html>
